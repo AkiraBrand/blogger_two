@@ -8,8 +8,8 @@ describe "user sess all articles" do
 
       visit '/articles'
 
-      expect(page).to have_content(article_1.title)
-      expect(page).to have_content(article_2.title)
+      expect(page).to have_link(article_1.title)
+      expect(page).to have_link(article_2.title)
     end
   end
 end
