@@ -8,7 +8,7 @@ describe "user sees one article"do
 
     visit articles_path
     click_link article.title
-
+    
     expect(page).to have_content(article.title)
     expect(page).to have_content(article.body)
    end
