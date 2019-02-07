@@ -14,6 +14,8 @@ describe "a user can create a new article" do
         fill_in "article[body]", with: "New Body!"
         click_on "Create Article"
 
+      
+
         expect(page).to have_content("New Title!")
         expect(page).to have_content("New Body!")
      end
